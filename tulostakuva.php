@@ -68,7 +68,6 @@
         }
 
     </style>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <?php
@@ -117,10 +116,6 @@
                 ?>
             </p>
         </main>
-        <button onClick="window.location.reload();">
-            <span class="material-icons-outlined">
-            refresh</span>
-        </button> 
     </div>
 </body>
 </html>
