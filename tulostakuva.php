@@ -6,10 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuvan tulostus</title>
     <style>
+        html, body {
+            width: 100%;
+            height:100%;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* ^^^ https://codepen.io/hylobates-lar/pen/qBbQeON ^^^ */
+
         body{
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
         }
+
         #container{
             display: grid;
             grid-template-columns: 1fr 2fr 1fr;
@@ -20,12 +46,15 @@
             '. . .'
             ;
         }
+
         #content{
             grid-area: content;
         }
+        
         h1{
             font-weight: 900;
         }
+
         p{
             font-weight: 500;
         }
