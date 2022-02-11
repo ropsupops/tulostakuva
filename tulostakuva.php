@@ -7,19 +7,19 @@
     <title>Kuvan tulostus</title>
 </head>
 <body>
-    <h1>Tämä sivu tulostaa satunnaisen kuvan, kun päivität sivun</h1>
+    <h1>Päivitä sivu, jotta saat satunnaisen kuvan</h1>
     <img 
     src="<?php 
-
+        echo "666";
     ?>" 
     alt="<?php 
-
+        echo "666";
     ?>" 
     height="<?php 
-
+        echo "666";
     ?>" 
     width="<?php 
-    
+        echo "666";
     ?>">
     <p><?php ?></p>
 </body>
