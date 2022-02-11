@@ -9,39 +9,46 @@
 <body>
     <?php
         $kuvat = array(
-                    array(  "src"=>"./meme1", 
+                    array(  "src"=>"/meme1.jpeg", 
                             "alt"=>"Mies ja perhonen",
                             "height"=>"600px",
-                            "widht"=>"600px"),
-                    array(  "src"=>"./meme2", 
+                            "width"=>"600px"),
+                    array(  "src"=>"/meme2.jpeg", 
                             "alt"=>"Yllättynyt Pikachu",
                             "height"=>"600px",
-                            "widht"=>"600px"),
-                    array(  "src"=>"./meme3", 
+                            "width"=>"600px"),
+                    array(  "src"=>"/meme3.jpeg", 
                             "alt"=>"Mahtava Shiba Inu",
                             "height"=>"600px",
-                            "widht"=>"600px"),
-                    array(  "src"=>"./meme4", 
+                            "width"=>"600px"),
+                    array(  "src"=>"/meme4.jpeg", 
                             "alt"=>"Pastakauhanaamio",
                             "height"=>"600px",
-                            "widht"=>"600px")
+                            "width"=>"600px")
                     );
+
+
+        $valinta = $kuvat[rand(0, count($kuvat) - 1)];
     ?>
     <h1>Päivitä sivu, jotta saat satunnaisen kuvan</h1>
     <img 
         src="<?php 
-            echo "666";
+            echo $valinta["src"];
         ?>" 
         alt="<?php 
-            echo "666";
-        ?>" 
+            echo $valinta["alt"];
+            ?>" 
         height="<?php 
-            echo "666";
-        ?>" 
+            echo $valinta["height"];
+            ?>" 
         width="<?php 
-            echo "666";
-        ?>"
+            echo $valinta["width"];
+            ?>"
     >
-    <p><?php ?></p>
+    <p>
+        <?php 
+            echo $valinta["alt"];
+        ?>
+    </p>
 </body>
 </html>
