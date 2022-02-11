@@ -9,6 +9,7 @@
         html, body {
             width: 100%;
             height:100%;
+            overflow: hidden;
         }
 
         body {
@@ -34,6 +35,7 @@
         body{
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
+            position: relative;
         }
 
         #container{
@@ -42,15 +44,15 @@
             grid-template-rows: 1fr 2fr 1fr;
             grid-template-areas:
             '. . .'
-            '. content .'
+            '. main .'
             '. . .'
             ;
         }
 
-        #content{
-            grid-area: content;
+        main{
+            grid-area: main;
         }
-        
+
         h1{
             font-weight: 900;
         }
@@ -58,7 +60,15 @@
         p{
             font-weight: 500;
         }
+
+        button{
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+
     </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <?php
@@ -85,7 +95,7 @@
         $valinta = $kuvat[rand(0, count($kuvat) - 1)];
     ?>
     <div id="container">
-        <div id="content">
+        <main>
             <h1>Päivitä sivu, jotta saat satunnaisen kuvan</h1>
             <img 
                 src="<?php 
@@ -106,7 +116,11 @@
                     echo $valinta["alt"];
                 ?>
             </p>
-        </div>    
+        </main>
+        <button onClick="window.location.reload();">
+            <span class="material-icons-outlined">
+            refresh</span>
+        </button> 
     </div>
 </body>
 </html>
