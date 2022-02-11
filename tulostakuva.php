@@ -74,20 +74,20 @@
         $kuvat = array(
                     array(  "src"=>"./meme1.jpeg", 
                             "alt"=>"Mies ja perhonen",
-                            "height"=>"161px",
-                            "width"=>"300px"),
+                            "height"=>"161",
+                            "width"=>"300"),
                     array(  "src"=>"./meme2.jpg", 
                             "alt"=>"Yllättynyt Pikachu",
-                            "height"=>"301px",
-                            "width"=>"300px"),
+                            "height"=>"301",
+                            "width"=>"300"),
                     array(  "src"=>"./meme3.jpeg", 
                             "alt"=>"Mahtava Shiba Inu",
-                            "height"=>"168px",
-                            "width"=>"300px"),
+                            "height"=>"168",
+                            "width"=>"300"),
                     array(  "src"=>"./meme4.jpg", 
                             "alt"=>"Pastakauhanaamio",
-                            "height"=>"301px",
-                            "width"=>"300px")
+                            "height"=>"301",
+                            "width"=>"300")
                     );
 
 
