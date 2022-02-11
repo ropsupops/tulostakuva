@@ -63,19 +63,19 @@
 <body>
     <?php
         $kuvat = array(
-                    array(  "src"=>"/meme1.jpeg", 
+                    array(  "src"=>"./meme1.jpeg", 
                             "alt"=>"Mies ja perhonen",
                             "height"=>"161px",
                             "width"=>"300px"),
-                    array(  "src"=>"/meme2.jpg", 
+                    array(  "src"=>"./meme2.jpg", 
                             "alt"=>"Yllättynyt Pikachu",
                             "height"=>"301px",
                             "width"=>"300px"),
-                    array(  "src"=>"/meme3.jpeg", 
+                    array(  "src"=>"./meme3.jpeg", 
                             "alt"=>"Mahtava Shiba Inu",
                             "height"=>"168px",
                             "width"=>"300px"),
-                    array(  "src"=>"/meme4.jpg", 
+                    array(  "src"=>"./meme4.jpg", 
                             "alt"=>"Pastakauhanaamio",
                             "height"=>"301px",
                             "width"=>"300px")
